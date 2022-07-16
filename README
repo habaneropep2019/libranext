@@ -20,3 +20,6 @@ as the commands are often used from Linux from Scratch, especially for packages 
 Essentially, you can simply run ./build.sh to compile the source code and create a Debian package. It's simple, and doesn't
 have any way to check for build-time dependencies. Since Libranext is a Debian clone created largely from Linux from Scratch,
 you'll find both the packages.debian.org website and Linux from Scratch documentation immensely useful.
+
+Note that you may find multiple versions of source in each directory. build.sh will be updated to default to the newest version.
+You can specify a different (aka older) version of each package by passing the full name of the source folder you wish to use.
