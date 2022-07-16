@@ -1,0 +1,22 @@
+This is the home of the Libranext distribution. You can find all files in the distribution here.
+
+Please note, that at this time Libranext is a pure 64-bit system. Adding support for other architectures is planned in the
+future, but the build system assumes a pure 64-bit system.
+
+Using the integrated build system
+==================================
+
+Building Individual Packages
+=============================
+In each directory, you'll find a source tarball, all required patches, and a script called build.sh. Libranext is a
+Debian clone, and while you'll find dpkg is present, and all software is packaged as .deb packages, some of the tooling
+you'd normally find for handling Debian packages is not present (such as the debhelper tools, etc.). I'm certainly not
+disputing the quality or handiness of these tools, however, this is a one-man project right now, and getting these tools
+to work properly on a bare-bones Libranext system takes a lot more effort than it's worth, as some of the tools require
+Debian-specific items (such as a Debian-patched Python3). It would be nice to eventually have these tools, but for now it's
+not feasible. This at least provides some level of reproducible builds. All build.sh scripts are licensed under the MIT license,
+as the commands are often used from Linux from Scratch, especially for packages included in base.
+
+Essentially, you can simply run ./build.sh to compile the source code and create a Debian package. It's simple, and doesn't
+have any way to check for build-time dependencies. Since Libranext is a Debian clone created largely from Linux from Scratch,
+you'll find both the packages.debian.org website and Linux from Scratch documentation immensely useful.

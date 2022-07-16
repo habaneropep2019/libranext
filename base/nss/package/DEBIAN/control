@@ -1,0 +1,9 @@
+Package: nss
+Version: 3.75
+Section: base
+Priority: required
+Depends: libranext (>=4.0), nspr (>=4.33)
+Recommends: p11-kit (>=0.24.1)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The Network Security Services (NSS) package is a set of libraries designed to support cross-platform development of security-enabled client and server applications.
