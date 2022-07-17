@@ -14,4 +14,25 @@
 #
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-dpkg-deb --build
+# Change directory to source
+cd nspr-4.33
+
+# Configure and compile package
+cd nspr                                                     &&
+sed -ri '/^RELEASE/s/^/#/' pr/src/misc/Makefile.in &&
+sed -i 's#$(LIBRARY) ##'   config/rules.mk         &&
+
+./configure --prefix=/usr \
+            --with-mozilla \
+            --with-pthreads \
+            $([ $(uname -m) = x86_64 ] && echo --enable-64bit) &&
+make
+
+# Install to package directory - NSPR has some weird auto/makefile stuff going on that DESTDIR doesn't quite behave as expected.
+## So normally you'd only have two levels of .., but for some reason it needs three. It works though.
+make DESTDIR=../../../package install
+
+# Build the debian package and rename it correctly.
+cd ../..
+dpkg-deb --build package
+mv package.deb nspr_4.33_amd64.deb

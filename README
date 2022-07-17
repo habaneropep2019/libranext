@@ -23,3 +23,13 @@ you'll find both the packages.debian.org website and Linux from Scratch document
 
 Note that you may find multiple versions of source in each directory. build.sh will be updated to default to the newest version.
 You can specify a different (aka older) version of each package by passing the full name of the source folder you wish to use.
+
+Make sure you specify the MAKEFLAGS environment variable if you want to use parallel builds - this helps speed up the process.
+You can simply run:
+
+export MAKEFLAGS='-j4'
+
+The -j option tells how many processes you want to spawn. For example, if you have a dual-core processor, -j2 is usually a safe
+value. If your processor supports hyperthreading, you can usually double that number safely. If you want to be able to use the
+host system while you're compiling, subtract one or two, otherwise your system can become slow. All build.sh scripts will assume
+-j1 unless otherwise specified by this variable. Note that some packages will ignore this as they don't support parallel build.
