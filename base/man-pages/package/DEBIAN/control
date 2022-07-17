@@ -1,0 +1,8 @@
+Package: man-pages
+Version: 5.13
+Section: base
+Priority: required
+Depends: libranext (>=4.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Describe C programming language functions, important device files, and significant configuration files
