@@ -1,0 +1,8 @@
+Package: libunistring
+Version: 1.0
+Section: base
+Priority: important
+Depends: libranext (>=4.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: libunistring is a library that provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.
