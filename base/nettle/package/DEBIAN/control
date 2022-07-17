@@ -1,0 +1,8 @@
+Package: nettle
+Version: 3.7.3
+Section: base
+Priority: important
+Depends: libranext (>=4.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The Nettle package contains a low-level cryptographic library that is designed to fit easily in many contexts.
