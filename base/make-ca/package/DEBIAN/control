@@ -1,0 +1,9 @@
+Package: make-ca
+Version: 1.10
+Section: base
+Priority: required
+Depends: libranext (>=4.0), p11-kit (>=0.24.1)
+Recommends: nss (>=3.75), mozilla-certdata (>=0220717)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: make-ca is a utility to deliver and manage a complete PKI configuration for workstations and servers using only standard Unix utilities, OpenSSL, and p11-kit, using a Mozilla cacerts.txt or like file as the trust source. It can optionally generate keystores for OpenJDK PKCS#12 and NSS if installed.
