@@ -1,0 +1,8 @@
+Package: gnutls
+Version: 3.7.3
+Section: base
+Priority: important
+Depends: libranext (>=4.0), nettle (>=3.7.3), make-ca (>=1.10), libunistring (>=1.0), libtasn1 (>=4.18.0), p11-kit (>=0.24.1)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GnuTLS is a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them.
