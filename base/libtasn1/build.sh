@@ -26,7 +26,8 @@ make
 
 # Install to package directory - NSPR has some weird auto/makefile stuff going on that DESTDIR doesn't quite behave as expected.
 ## So normally you'd only have two levels of .., but for some reason it needs three. It works though.
-make DESTDIR=../package install
+workdir=`pwd`
+make DESTDIR=$workdir/package install
 
 # Build the debian package and rename it correctly.
 cd ../
