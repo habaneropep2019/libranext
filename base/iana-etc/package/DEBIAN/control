@@ -1,0 +1,8 @@
+Package: iana-etc
+Version: 20220207
+Section: base
+Priority: important
+Depends: libranext (>=4.0)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Describes the various DARPA Internet protocols that are available from the TCP/IP subsystem. Provides a mapping between friendly textual names for internet services, and their underlying assigned port numbers and protocol types.
