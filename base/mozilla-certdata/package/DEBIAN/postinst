@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+make-ca -C /usr/share/mozilla-certdata/certdata.txt

@@ -14,26 +14,6 @@
 #
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# Extract the source archive
-tar xvzf libtasn1-4.18.0.orig.tar.gz
-
-# Change directory to source
-cd libtasn1-4.18.0
-
-# Configure and compile package
-./configure --prefix=/usr --disable-static &&
-make
-
-# Install to package directory
-unset workdir
-unset workdir1
-workdir1=`pwd`
-cd ..
-workdir=`pwd`
-cd $workdir1
-make DESTDIR=$workdir/package install
-
 # Build the debian package and rename it correctly.
-cd ../
 dpkg-deb --build package
-mv package.deb libtasn1_4.18.0_amd64.deb
+mv package.deb mozilla-certdata_20220717_all.deb

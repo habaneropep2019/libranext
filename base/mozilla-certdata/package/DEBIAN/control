@@ -1,0 +1,10 @@
+Package: mozilla-certdata
+Version: 20220717
+Section: base
+Priority: required
+Depends: libranext (>=4.0)
+Pre-Depends: make-ca (>=1.10)
+Recommends: nss (>=3.75)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This is a copy of the Mozilla certdata.txt root trust file, found at https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt
