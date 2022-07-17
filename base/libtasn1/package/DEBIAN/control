@@ -1,0 +1,8 @@
+Package: libtasn1
+Version: 4.18.0
+Section: base
+Priority: required
+Depends: libranext (>=4.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Libtasn1 is the ASN.1 library used by GnuTLS, p11-kit and some other packages.
