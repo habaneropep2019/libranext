@@ -24,8 +24,7 @@ cd libtasn1-4.18.0
 ./configure --prefix=/usr --disable-static &&
 make
 
-# Install to package directory - NSPR has some weird auto/makefile stuff going on that DESTDIR doesn't quite behave as expected.
-## So normally you'd only have two levels of .., but for some reason it needs three. It works though.
+# Install to package directory
 workdir=`pwd`
 make DESTDIR=$workdir/package install
 
