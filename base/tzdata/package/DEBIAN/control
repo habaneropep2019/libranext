@@ -1,0 +1,8 @@
+Package: tzdata
+Version: 2021e
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This package contains time zone data.

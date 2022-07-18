@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+ ln -sfv /usr/share/zoneinfo/America/Chicago /etc/localtime
