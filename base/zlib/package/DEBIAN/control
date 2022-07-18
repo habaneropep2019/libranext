@@ -1,0 +1,8 @@
+Package: zlib
+Version: 1.2.11
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: zlib is designed to be a free, general-purpose, legally unencumbered -- that is, not covered by any patents -- lossless data-compression library.
