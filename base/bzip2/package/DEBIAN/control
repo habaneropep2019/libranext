@@ -1,0 +1,8 @@
+Package: bzip2
+Version: 1.0.8
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: bzip2 is a freely available, patent free, high-quality data compressor.
