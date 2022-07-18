@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+if [ ! -e /usr/lib/libbz2.so ]
+then
+	ln -sv libbz2.so.1.0.8 /usr/lib/libbz2.so
+fi
+
+for i in /usr/bin/{bzcat,bunzip2}; do
+  ln -sfv bzip2 $i
+done

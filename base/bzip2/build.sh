@@ -39,6 +39,12 @@ workdir=`pwd`
 cd $workdir1
 make PREFIX=$workdir/package/usr install
 
+cp -av libbz2.so.* $workdir/package/usr/lib
+
+cp -v bzip2-shared $workdir/package/usr/bin/bzip2
+
+rm -fv $workdir/package/usr/lib/libbz2.a
+
 # Build the debian package and rename it correctly.
 cd ../
 dpkg-deb --build package
