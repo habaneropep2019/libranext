@@ -1,0 +1,8 @@
+Package: zstd
+Version: 1.5.2
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Zstandard is a real-time compression algorithm, providing high compression ratios.
