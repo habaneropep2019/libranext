@@ -1,0 +1,8 @@
+Package: xz
+Version: 5.2.5
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm compression format, which provides memory-hungry but powerful compression (often better than bzip2) and fast, easy decompression.
