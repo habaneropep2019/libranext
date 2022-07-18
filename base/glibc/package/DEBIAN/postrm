@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-1'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-2'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-3'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-4'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-5'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-6'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-7'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-8'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-9'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-10'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-11'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-12'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-13'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-14'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-15'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-16'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-17'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libc.info-18'

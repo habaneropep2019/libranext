@@ -1,0 +1,9 @@
+Package: glibc
+Version: 2.35
+Section: base
+Priority: required
+Essential: yes
+Depends: libranext (>=4.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The Glibc package contains the main C library.
