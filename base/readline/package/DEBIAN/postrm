@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/history.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/readline.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/rluserman.info'

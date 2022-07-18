@@ -1,0 +1,8 @@
+Package: readline
+Version: 8.1.2
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
