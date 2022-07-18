@@ -1,0 +1,8 @@
+Package: m4
+Version: 1.4.19
+Section: base
+Priority: important
+Depends: libranext (>=4.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The M4 package contains a macro processor.

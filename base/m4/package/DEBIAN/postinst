@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/m4.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/m4.info-1'
+install-info --info-dir='/usr/share/info' '/usr/share/info/m4.info-2'
