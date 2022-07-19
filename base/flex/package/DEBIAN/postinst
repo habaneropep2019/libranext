@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/flex.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/flex.info-1'
+install-info --info-dir='/usr/share/info' '/usr/share/info/flex.info-2'
+
+if [ ! -e /usr/bin/lex ]
+then
+	echo "Setting up compatibility symlink for lex..."
+	ln -sv flex /usr/bin/lex
+fi

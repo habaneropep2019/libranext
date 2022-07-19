@@ -1,0 +1,9 @@
+Package: flex
+Version: 2.6.4
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35), m4 (>=1.4.19)
+Recommends: gcc
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Flex is a tool for generating scanners: programs which recognized lexical patterns in text.

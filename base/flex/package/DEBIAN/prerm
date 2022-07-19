@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/flex.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/flex.info-1'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/flex.info-2'
+
+if [ -e /usr/bin/lex ]
+then
+	echo "Removing compatibility symlink for lex..."
+	rm -v /usr/bin/lex
+fi
