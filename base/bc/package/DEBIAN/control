@@ -1,0 +1,8 @@
+Package: bc
+Version: 5.2.2
+Section: base
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35), ncurses (>=6.3), readline (>=8.1.2)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The Bc package contains an arbitrary precision numeric processing language.
