@@ -1,0 +1,10 @@
+Package: curl
+Version: 7.81.0
+Section: base
+Priority: standard
+Depends: libranext (>=4.0), make-ca (>=1.10), glibc (>=2.35), zlib (>=1.2.11)
+Recommends: gnutls (>=3.7.3)
+Provides: libcurl4 (=7.81.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
