@@ -1,6 +1,6 @@
 Package: libtasn1
 Version: 4.18.0
-Section: base
+Section: libs
 Priority: required
 Depends: libranext (>=4.0)
 Architecture: amd64

@@ -1,6 +1,6 @@
 Package: libseccomp
 Version: 2.5.3
-Section: base
+Section: libs
 Priority: standard
 Depends: libranext (>=4.0), glibc (>=2.35)
 Provides: libseccomp2 (=2.5.3)

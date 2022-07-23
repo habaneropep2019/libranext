@@ -1,6 +1,6 @@
 Package: libarchive
 Version: 3.6.0
-Section: base
+Section: libs
 Priority: standard
 Depends: libranext (>=4.0), acl (>=2.3.1), bzip2 (>=1.0.8), glibc (>=2.35), xz (>=5.2.5), zlib (>=1.2.11), zstd (>=1.5.2), nettle (>=3.7.3), libxml2 (>=2.9.13)
 Provides: libarchive13 (=3.6.0)

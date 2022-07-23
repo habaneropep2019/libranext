@@ -1,6 +1,6 @@
 Package: curl
 Version: 7.81.0
-Section: base
+Section: web
 Priority: standard
 Depends: libranext (>=4.0), make-ca (>=1.10), glibc (>=2.35), zlib (>=1.2.11)
 Recommends: gnutls (>=3.7.3)

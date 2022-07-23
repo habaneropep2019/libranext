@@ -1,6 +1,6 @@
 Package: libuv
 Version: 1.43.0
-Section: base
+Section: libs
 Priority: standard
 Depends: libranext (>=4.0), glibc (>=2.35)
 Provides: libuv1 (=1.43.0)

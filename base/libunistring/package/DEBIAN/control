@@ -1,6 +1,6 @@
 Package: libunistring
 Version: 1.0
-Section: base
+Section: libs
 Priority: important
 Depends: libranext (>=4.0)
 Architecture: amd64
