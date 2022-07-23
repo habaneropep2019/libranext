@@ -1,0 +1,9 @@
+Package: libuv
+Version: 1.43.0
+Section: base
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libuv1 (=1.43.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The libuv package is a multi-platform support library with a focus on asynchronous I/O.
