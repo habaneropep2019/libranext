@@ -1,0 +1,9 @@
+Package: libseccomp
+Version: 2.5.3
+Section: base
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libseccomp2 (=2.5.3)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This library provides a high level interface to constructing, analyzing and installing seccomp filters via a BPF passed to the Linux Kernel's prctl() syscall.
