@@ -1,0 +1,10 @@
+Package: libcap
+Version: 2.63
+Section: libs
+Priority: important
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libcap2 (=2.63), libcap2-bin (=2.63), libcap-dev (=2.63)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The Libcap package implements the user-space interfaces to the POSIX 1003.1e capabilities available in Linux kernels.
