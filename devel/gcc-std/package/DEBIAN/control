@@ -1,0 +1,10 @@
+Package: gcc-std
+Version: 11.2.0
+Section: devel
+Priority: optional
+Depends: libranext (>=4.0), libranext-base (>=4.0), binutils (>=2.38), gmp (>=6.2.1), mpfr (>=4.1.0), mpc (>=1.2.1), zstd (>=1.5.2), zlib  (>=1.2.11), glibc (>=2.35)
+Provides: gcc, g++, cc, c-compiler, c++-compiler, go-compiler, gccgo, gdc, d-compiler, gfortran, fortran95-compiler
+Conflicts: gcc-minimal
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The GCC Standard package contains the GNU C, C++, Go, D, and Fortran compilers.
