@@ -1,0 +1,11 @@
+Package: mpc
+Version: 1.2.1
+Section: libs
+Priority: important
+Essential: yes
+Depends: libranext (>=4.0), gmp (>=6.2.1), mpfr (>=4.1.0), glibc (>=2.35)
+Provides: libmpc3 (=1.2.1), libmpc-dev (=1.2.1)
+Recommends: gcc
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: MPC is a portable library written in C for arbitrary precision arithmetic on complex numbers providing correct rounding.
