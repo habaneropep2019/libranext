@@ -27,6 +27,32 @@ cd mpfr-4.1.0
             --docdir=/usr/share/doc/mpfr-4.1.0
 make
 make html
+
+function testsuite {
+	make check | less
+	echo ""
+	echo "4 tests are known to fail in a Libranext 4.0 environment"
+	read -p 'Do you accept the test results? (yes/no):' testaccept
+
+	if [ $testaccept == "no" ]
+	then
+		exit 1
+	fi
+}
+
+while getopts "t" option; do
+case ${option} in
+t )
+echo "Running test suite..."
+testsuite
+;;
+\? )
+echo "Not running test suite..."
+sleep 2s
+;;
+esac
+done
+
 # Install to package directory
 unset workdir
 unset workdir1
