@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+if [ ! -e /usr/lib/libexpect5.45.4.so ]
+then
+	echo "Creating compatability symlink..."
+	ln -svf expect5.45.4/libexpect5.45.4.so /usr/lib
+fi

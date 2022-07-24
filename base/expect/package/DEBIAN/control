@@ -1,0 +1,9 @@
+Package: expect
+Version: 5.45.4
+Section: interpreters
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35), tcl (>=8.6)
+Provides: expect-dev (=5.45.4)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Expect is a tool for automating interactive applications according to a script.
