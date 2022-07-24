@@ -1,0 +1,10 @@
+Package: acl
+Version: 2.3.1
+Section: utils
+Priority: important
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35), attr (>=2.5.1)
+Provides: libacl1 (=2.3.1), libacl1-dev (=2.3.1)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This package contains the getfacl and setfacl utilities needed for manipulating access control lists.
