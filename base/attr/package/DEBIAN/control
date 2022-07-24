@@ -1,0 +1,10 @@
+Package: attr
+Version: 2.5.1
+Section: utils
+Priority: important
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libattr1 (=2.5.1)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: A set of tools for manipulating extended attributes on filesystem objects.
