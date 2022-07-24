@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/as.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/bfd.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/binutils.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/ld.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/ctf-spec.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/gprof.info'
