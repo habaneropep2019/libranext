@@ -1,0 +1,10 @@
+Package: mpfr
+Version: 4.1.0
+Section: libs
+Priority: important
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35), gmp (>=6.2.1)
+Provides: libmpfr6 (=4.1.0), libmpfr-dev (=4.1.0), libmpfr-doc (=4.1.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: MPFR provides a library for multiple-precision floating-point computation with correct rounding. 
