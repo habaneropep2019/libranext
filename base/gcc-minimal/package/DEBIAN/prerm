@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/cpp.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/cppinternals.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/gcc.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/gccinstall.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/gccint.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libgomp.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libitm.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/libquadmath.info'

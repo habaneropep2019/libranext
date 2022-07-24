@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+if [ -e /usr/lib/cpp ]
+then
+	echo "Removing compatability symlink..."
+	rm -v /usr/lib/cpp
+fi

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e
+
+if [ ! -e /usr/lib/cpp ]
+then
+	echo "Creating compatability symlink..."
+	ln -svr /usr/bin/cpp /usr/lib
+fi
+
+
+if [ ! -e /usr/lib/bfd-plugins/liblto_plugin.so ]
+then
+	echo 'Enabling LTO (link time optimization)...'
+	ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/11.2.0/liblto_plugin.so \
+        /usr/lib/bfd-plugins/
+fi
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/cpp.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/cppinternals.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/gcc.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/gccinstall.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/gccint.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/libgomp.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/libitm.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/libquadmath.info'
