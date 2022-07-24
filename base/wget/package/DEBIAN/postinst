@@ -2,4 +2,4 @@
 
 set -e
 
- install-info --info-dir='/usr/share/info' '/usr/share/info/wget.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/wget.info'
