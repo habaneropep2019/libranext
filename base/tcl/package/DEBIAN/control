@@ -1,0 +1,9 @@
+Package: tcl
+Version: 8.6.12
+Section: interpreters
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35), tzdata, zlib (>=1.2.11)
+Provides: tcl8.6 (=8.6.12), libtcl8.6 (=8.6.12)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Tcl is a powerful, easy to use, embeddable, cross-platform interpreted scripting language.

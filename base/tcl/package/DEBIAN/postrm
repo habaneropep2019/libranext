@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+if [ -e /usr/bin/tclsh ]
+then
+	echo "Removing compatibility symlink.."
+	rm -v /usr/bin/tclsh
+fi
