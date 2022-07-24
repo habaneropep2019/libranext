@@ -28,6 +28,9 @@ cd mpfr-4.1.0
 make
 make html
 
+# Test suite doesn't run by default, but it is highly encouraged. Note that 4 tests are known to fail in a Libranext environment.
+## This is generally not a concern as long as MPC passes its tests.
+
 function testsuite {
 	make check | less
 	echo ""
