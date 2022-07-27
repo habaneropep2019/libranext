@@ -1,0 +1,9 @@
+Package: libgpg-error
+Version: 1.44
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libgpg-error0 (=1.44), libgpg-error-dev (=1.44)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Library that defines common error values, messages, and common runtime functionality for all GnuPG components.

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/gpgrt.info'
