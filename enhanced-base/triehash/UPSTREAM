@@ -1,0 +1,9 @@
+This file is not compiled on a Libranext system right now.
+
+You can safely use and install the upstream Debian triehash package.
+
+Libranext 4.0 currently follows Debian bookworm (testing) for certain dpkg/apt related packages.
+
+Upstream link: https://packages.debian.org/bookworm/triehash
+
+Currently, Libranext 4.0 bundles triehash 0.3-3.
