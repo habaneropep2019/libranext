@@ -1,0 +1,9 @@
+Package: xxhash
+Version: 0.8.1
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libxxhash0 (=0.8.1)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
