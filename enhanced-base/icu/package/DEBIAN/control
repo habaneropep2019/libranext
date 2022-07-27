@@ -1,0 +1,10 @@
+Package: icu
+Version: 70.1
+Section: libs
+Priority: optional
+Depends: libranext (>=4.0), glibc (>=2.35), gcc (>=11)
+Breaks: openttd (<<1.8.0-2~)
+Provides: icu-doc (=70.1), icu-devtools (=70.1), libicu-dev (=70.1), libicu70
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: ICU is a C++ and C library that provides robust and full-featured Unicode and locale support.
