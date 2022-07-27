@@ -3,7 +3,7 @@ Version: 11.2.0
 Section: devel
 Priority: important
 Depends: libranext (>=4.0), libranext-base (>=4.0), binutils (>=2.38), gmp (>=6.2.1), mpfr (>=4.1.0), mpc (>=1.2.1), zstd (>=1.5.2), zlib  (>=1.2.11), glibc (>=2.35)
-Provides: gcc, g++, cc, c-compiler, c++-compiler
+Provides: gcc (=11.2.0), g++, cc, c-compiler, c++-compiler
 Conflicts: gcc-std
 Architecture: amd64
 Maintainer: Alec Bloss <abloss@libranext.com>
