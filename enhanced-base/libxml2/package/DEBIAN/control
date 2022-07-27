@@ -1,0 +1,10 @@
+Package: libxml2
+Version: 2.9.13
+Section: libs
+Priority: optional
+Depends: libranext (>=4.0), libicu70 | icu (>=70.1), glibc (>=2.35), xz (>=5.2.5), zlib (>=1.2.11)
+Provides: libxml2-dev (=2.9.13), libxml2-utils (=2.9.13), libxml2-doc (=2.9.13)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GNOME XML library
+ The libxml2 package contains libraries and utilities used for parsing XML files.
