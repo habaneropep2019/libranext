@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/gcrypt.info'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/gcrypt.info-1'
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/gcrypt.info-2'

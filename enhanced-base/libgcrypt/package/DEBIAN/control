@@ -1,0 +1,9 @@
+Package: libgcrypt
+Version: 1.10.0
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), libgpg-error (>=1.44), glibc (>=2.35)
+Provides: libgcrypt20 (=1.10.0), libgcrypt20-dev (=1.10.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: libgcrypt contains cryptographic functions.
