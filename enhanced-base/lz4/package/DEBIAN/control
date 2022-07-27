@@ -1,0 +1,9 @@
+Package: lz4
+Version: 1.9.3
+Section: utils
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35), xxhash (>=0.8.1)
+Provides: liblz4-1 (=1.9.3), liblz4-dev (=1.9.3)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: LZ4 is lossless compression algorithm, providing compression speed > 500 MB/s per core, scalable with multi-cores CPU.
