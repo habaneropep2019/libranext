@@ -1,0 +1,9 @@
+Package: yaml-tiny
+Version: 1.73
+Section: interpreters
+Priority: optional
+Depends: libranext (>=4.0), perl (>=5.34.0)
+Provides: libyaml-tiny-perl (=1.73)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: YAML::Tiny is a pure Perl module that provides support for reading and writing a usable subset of the full YAML specification.
