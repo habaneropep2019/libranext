@@ -1,0 +1,9 @@
+Package: extutils-cchecker
+Version: 0.11
+Section: interpreters
+Priority: optional
+Depends: libranext (>=4.0), perl (>=5.34.0), try-tiny (>=0.31), test-fatal (>=0.016)
+Provides: libextutils-cchecker-perl (=0.31)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: ExtUtils::CChecker is a Perl module designed to check for the presence of libraries and C headers required for building the remainder of your package.
