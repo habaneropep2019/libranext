@@ -1,0 +1,9 @@
+Package: unzip
+Version: 6.0
+Section: utils
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35), bzip2 (>=1.0.8)
+Suggests: zip
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: InfoZIP's unzip program.
