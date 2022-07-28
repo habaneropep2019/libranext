@@ -1,0 +1,11 @@
+Package: docbook-xsl
+Version: 1.79.2
+Section: text
+Priority: optional
+Depends: libranext (>=4.0), libxml2 (>=2.9.13)
+Provides: docbook-xsl-ns (=1.79.2)
+Suggests: docbook-xsl-doc, libxslt
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: stylesheets for processing DocBook XML to various output formats
+ These are modular XSL stylesheets for processing documents composed with the DocBook XML DTD and its derivatives ("Simplified" DocBook XML, JRefEntry DTD, etc.).

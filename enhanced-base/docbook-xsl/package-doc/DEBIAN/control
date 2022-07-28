@@ -1,0 +1,10 @@
+Package: docbook-xsl-doc
+Version: 1.79.2
+Section: doc
+Priority: optional
+Depends: libranext (>=4.0), docbook-xsl (=1.79.2)
+Provides: docbook-xsl-doc-html (=1.79.2), docbook-xsl-doc-pdf(=1.79.2), docbook-xsl-doc-text (=1.79.2)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: stylesheets for processing DocBook XML files (documentation)
+ This package contains the documentation for the DocBook XSL stylesheets and explanations for the parameters you can use.
