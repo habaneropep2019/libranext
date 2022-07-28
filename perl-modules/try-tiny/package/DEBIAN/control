@@ -1,0 +1,9 @@
+Package: try-tiny
+Version: 0.31
+Section: interpreters
+Priority: optional
+Depends: libranext (>=4.0), perl (>=5.34.0)
+Provides: libtry-tiny-perl (=0.31)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Try::Tiny is a Perl module that provides bare bones try/catch statements.
