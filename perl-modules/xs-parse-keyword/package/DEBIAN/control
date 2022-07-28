@@ -1,0 +1,9 @@
+Package: xs-parse-keyword
+Version: 0.25
+Section: interpreters
+Priority: optional
+Depends: libranext (>=4.0), perl (>=5.34.0), extutils-cchecker (>=0.11)
+Provides: libxs-parse-keyword-perl (=0.25)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: XS::Parse::Keywords provides some XS functions to assist in writing syntax modules
