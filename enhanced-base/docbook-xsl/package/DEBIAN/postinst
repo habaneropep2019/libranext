@@ -36,3 +36,15 @@ xmlcatalog --noout --add "rewriteURI" \
            "http://docbook.sourceforge.net/release/xsl/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
     /etc/xml/catalog
+    
+# Create compatability symlink so programs can find the docbook-xsl, cause we put stuff in versioned directories.
+
+if [ ! -d /usr/share/xml/docbook/stylesheet ]
+then
+	mkdir -v /usr/share/xml/docbook/stylesheet
+fi
+
+if [ ! -e /usr/share/xml/docbook/stylesheet/docbook-xsl ]
+then
+	ln -sv /usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2 /usr/share/xml/docbook/stylesheet/docbook-xsl
+fi

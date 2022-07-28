@@ -3,3 +3,11 @@
 set -e
 
 sed -i '/rewrite/d' /etc/xml/catalog
+
+# Remove compatability symlink and directory
+
+if [ -d /usr/share/xml/docbook/stylesheet ]
+then
+	cd /usr/share/xml/docbook/
+	rm -rv stylesheet
+fi
