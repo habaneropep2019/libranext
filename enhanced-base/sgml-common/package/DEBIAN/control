@@ -1,0 +1,9 @@
+Package: sgml-common
+Version: 0.6.3
+Section: text
+Priority: optional
+Depends: libranext (>=4.0), libranext-base (>=4.0)
+Recommends: docbook-xml, docbook-xsl, libxml2, libxslt
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This is useful for creating and maintaining centralized SGML catalogs.
