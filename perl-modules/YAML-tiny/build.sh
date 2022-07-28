@@ -32,6 +32,9 @@ workdir=`pwd`
 cd $workdir1
 make DESTDIR=$workdir/package install
 
+# Remove unecessary pod file to avoid conflicts
+rm -v $workdir/package/usr/lib/perl5/5.34/core_perl/perllocal.pod
+
 # Build the debian package and rename it correctly.
 cd ../
 dpkg-deb --build package
