@@ -2,12 +2,13 @@ Package: apt
 Version: 2.5.1
 Section: admin
 Priority: important
-Depends: libranext (>=4.0), libgcrypt (>=1.10.0), libgpg-error (>=1.44), libranext-base (>=4.0), gnutls (>=3.7.3), gcc (>=11), libseccomp (>=2.5.3), dpkg (>=1.21.9)
+Depends: libranext (>=4.0), libgcrypt (>=1.10.0), libgpg-error (>=1.44), libranext-base (>=4.0), gnutls (>=3.7.3), gcc (>=11), libseccomp (>=2.5.3), dpkg (>=1.21.9), xs-parse-keyword (>=0.25), syntax-keyword-try (>=0.27), YAML-tiny (>=1.73), glibc (>=2.35)
 Breaks: apt-transport-https (<<1.5~alpha4~), apt-utils (<<1.3~exp2~), aptitude (<<0.8.10)
 Recommends: mozilla-certdata, make-ca
 Suggests: aptitude | synaptic, gnupg
 Replaces: apt-transport-https (<<1.5~alpha4~), apt-utils (<<1.3~exp2~)
-Provides: apt-transport-https
+Provides: apt-transport-https, libapt-pkg6.0 (=2.5.1)
 Architecture: amd64
 Maintainer: Alec Bloss <abloss@libranext.com>
 Description: commandline package manager
+ This package provides commandline tools for searching and managing as well as querying information about packages as a low-level access to all features of the libapt-pkg library.

@@ -15,33 +15,28 @@
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Extract the source archive
-tar xvf wget-1.21.2.orig.tar.gz
+tar xvf apt_2.5.1.orig.tar.xz
 
 # Change directory to source
-cd wget-1.21.2
+cd apt-2.5.1
 
 # Configure and compile package
-./configure --prefix=/usr      \
-            --sysconfdir=/etc  \
-            --with-ssl=openssl &&
+mkdir build
+cd build
+
+cmake -DWITH_DOC:BOOL=OFF -DWITH_DOC_DOXYGEN:BOOL=OFF -DWITH_DOC_EXAMPLES:BOOL=OFF -DWITH_DOC_GUIDES:BOOL=OFF -DWITH_DOC_MANPAGES:BOOL=ON -DWITH_TESTS:BOOL=OFF -DCACHE_DIR:PATH=/var/cache/apt -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCONF_DIR:PATH=/etc/apt -DLIBEXEC_DIR:PATH=/usr/libexec/apt -DLOG_DIR:PATH=/var/log/apt -DSTATE_DIR:PATH=/var/lib/apt -DBASH_COMPLETION_DIR:PATH=/usr/share/bash-completion/completions ../
 make
 
 # Install to package directory
 unset workdir
 unset workdir1
 workdir1=`pwd`
-cd ..
+cd ../..
 workdir=`pwd`
 cd $workdir1
 make DESTDIR=$workdir/package install
 
-# Remove info file so we can manage it with maintainer scripts
-
-cd $workdir/package/usr/share/info
-rm dir
-cd $workdir1
-
 # Build the debian package and rename it correctly.
-cd ../
+cd ../..
 dpkg-deb --build package
-mv package.deb wget_1.21.2_amd64.deb
+mv package.deb apt_2.5.1_amd64.deb
