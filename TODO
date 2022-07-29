@@ -1,0 +1,3 @@
+apt
+====
+- Create the vendor entry for Libranext as a patch, and send it upstream.  apt-2.5.1/vendor
