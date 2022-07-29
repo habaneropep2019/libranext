@@ -1,0 +1,9 @@
+Package: syntax-keyword-try
+Version: 0.27
+Section: interpreters
+Priority: optional
+Depends: libranext (>=4.0), perl (>=5.34.0), xs-parse-keyword (>=0.25)
+Provides: libsyntax-keyword-try-perl (=0.27)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Syntax::Keyword::Try provides a syntax plugin that implements exception-handling semantics in a form familiar to users of other languages, being built on a block labeled with the try keyword, followed by at least one of a catch or finally block.
