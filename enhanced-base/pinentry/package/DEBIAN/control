@@ -1,0 +1,9 @@
+Package: pinentry
+Version: 1.2.0
+Section: utils
+Priority: standard
+Depends: libranext (>=4.0), libgpg-error (>=1.44), glibc (>=2.35), libassuan (>=2.5.5), ncurses (>=6.3)
+Provides: pinentry-curses (=1.2.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This package contains a program that allows for secure entry of PINs or pass phrases.
