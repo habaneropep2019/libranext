@@ -1,0 +1,8 @@
+Package: libranext-debpkg-keyring
+Version: 2022-1
+Section: base
+Priority: important
+Depends: libranext (>=4.0), apt (>=2.0), gnupg (>=2.2)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This is the official Libranext DebPKG repository signing key. This key expires in July 2023.

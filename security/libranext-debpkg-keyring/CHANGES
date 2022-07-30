@@ -1,0 +1,3 @@
+2022-07-30, 2022-1 revision
+===============================
+- Changed key extension from .gpg to .asc so apt figures it out correctly...

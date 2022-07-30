@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+chown root:root /etc/apt/trusted.gpg.d/libranext-debpkg-2022.asc
+chmod 644 /etc/apt/trusted.gpg.d/libranext-debpkg-2022.asc
