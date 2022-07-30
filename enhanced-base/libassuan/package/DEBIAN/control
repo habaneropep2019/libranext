@@ -1,0 +1,9 @@
+Package: libassuan
+Version: 2.5.5
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), libgpg-error (>=1.44), glibc (>=2.35)
+Provides: libassuan0 (=2.5.5), libassuan-dev (=2.5.5)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Libassuan is a small library implementing the so-called "Assuan protocol".
