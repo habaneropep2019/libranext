@@ -1,0 +1,12 @@
+Package: bash
+Version: 5.1.16
+Section: shells
+Priority: required
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35), ncurses (>=6.3)
+Provides: bash-doc (=5.1.16)
+Recommends: bash-completion
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GNU Bourne Again SHell
+ Bash is an sh-compatible command language interpreter that executes commands read from the standard input or from a file. Bash also incorporates useful features from the Korn and C shells (ksh and csh).
