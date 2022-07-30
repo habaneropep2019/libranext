@@ -44,4 +44,4 @@ cd $workdir1
 # Build the debian package and rename it correctly.
 cd ../
 dpkg-deb --build package
-mv package.deb wget_1.21.2_amd64.deb
+mv package.deb gcc-standard_11.2.0-1_amd64.deb
