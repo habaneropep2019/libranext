@@ -95,4 +95,4 @@ cd $workdir1
 # Build the debian package and rename it correctly.
 cd ../..
 dpkg-deb --build package
-mv package.deb glibc_2.35_amd64.deb
+mv package.deb glibc_2.35-1_amd64.deb

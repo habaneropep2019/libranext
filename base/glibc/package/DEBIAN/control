@@ -1,9 +1,10 @@
 Package: glibc
-Version: 2.35
+Version: 2.35-1
 Section: base
 Priority: required
 Essential: yes
 Depends: libranext (>=4.0)
+Provides: libc6 (=2.35), libstdc++ (=6.0.29)
 Architecture: amd64
 Maintainer: Alec Bloss <abloss@libranext.com>
-Description: The Glibc package contains the main C library.
+Description: The Glibc package contains the main C library, and the libstdc++ C++ standard library.
