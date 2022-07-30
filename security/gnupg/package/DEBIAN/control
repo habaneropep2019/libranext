@@ -1,0 +1,11 @@
+Package: gnupg
+Version: 2.2.34
+Section: utils
+Priority: standard
+Depends: libranext (>=4.0), libranext-base (>=4.0), glibc (>=2.35), libassuan (>=2.5.5), libgcrypt (>=1.10.0), libgpg-error (>=1.44), readline (>=8.1.2), gnutls (>=3.7.3), libksba (>=1.6.0), npth (>=1.6), zlib (>=1.2.11), bzip2 (>=1.0.8), pinentry (>=1.2.0)
+Provides: gpg (=2.2.34), gpg-agent (=2.2.34), gnupg (=2.2.34), gnupg2 (=2.2.34), gnupg-utils (=2.2.34), dirmngr (=2.2.34), gpgconf (=2.2.34), gpgv
+Recommends: gnupg-doc
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures. It includes an advanced key management facility and is compliant with the proposed OpenPGP Internet standard as described in RFC4880.

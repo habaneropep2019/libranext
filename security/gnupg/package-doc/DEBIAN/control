@@ -1,0 +1,8 @@
+Package: gnupg-doc
+Version: 2.2.34
+Section: doc
+Priority: optional
+Depends: libranext (>=4.0), gnupg (>=2.2)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This contains HTML documentation for the GnuPG suite.
