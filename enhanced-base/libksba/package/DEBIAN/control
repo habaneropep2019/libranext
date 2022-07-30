@@ -1,0 +1,9 @@
+Package: libksba
+Version: 1.6.0
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), libgpg-error (>=1.44), glibc (>=2.35)
+Provides: libksba8 (=1.6.0), libksba-dev (=1.6.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: KSBA (pronounced Kasbah) is a library to make X.509 certificates

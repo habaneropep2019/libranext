@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+install-info --delete --info-dir='/usr/share/info' '/usr/share/info/ksba.info'
