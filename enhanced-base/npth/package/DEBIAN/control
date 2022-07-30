@@ -1,0 +1,9 @@
+Package: npth
+Version: 1.6
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libnpth0-dev (=1.6), libnpth0 (=1.6)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: nPth is a non-preemptive threads implementation using an API very similar to the one known from GNU Pth.
