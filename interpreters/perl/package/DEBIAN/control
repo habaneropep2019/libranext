@@ -1,0 +1,11 @@
+Package: perl
+Version: 5.34.0
+Section: interpreters
+Priority: required
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35), bzip2 (>=1.0.8), zlib (>=1.2.11)
+Provides: perl-base (=5.34.0), libperl5.34 (=5.34.0)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Larry Wall's Practical Extraction and Report Language
+ Perl is a highly capable, feature-rich programming language with over 20 years of development. Perl 5 runs on over 100 platforms from portables to mainframes. Perl is suitable for both rapid prototyping and large scale development projects.
