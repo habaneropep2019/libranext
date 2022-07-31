@@ -1,0 +1,11 @@
+Package: shadow
+Version: 4.11.1
+Section: admin
+Priority: required
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35), cracklib (>=2.9.7)
+Provides: passwd (=4.11.1)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: change and administer password and group data
+ This package includes passwd, chsh, chfn, and many other programs to maintain password and group data.

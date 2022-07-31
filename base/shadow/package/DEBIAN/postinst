@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+pwconv
+
+grpconv
+
+useradd -D --gid 999
