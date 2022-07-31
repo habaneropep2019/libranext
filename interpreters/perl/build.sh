@@ -56,4 +56,4 @@ unset BUILD_ZLIB BUILD_BZIP2
 # Build the debian package and rename it correctly.
 cd ../
 dpkg-deb --build package
-mv package.deb perl_5.34.0_amd64.deb
+mv package.deb perl_5.34.0-2_amd64.deb
