@@ -1,0 +1,10 @@
+Package: ncurses
+Version: 6.3
+Section: libs
+Priority: required
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libncurses6 (=6.3), libncursesw6 (=6.3), libtinfo6 (=6.3)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: shared libraries for terminal handling
+ The ncurses library routines are a terminal-independent method of updating character screens with reasonable optimization.

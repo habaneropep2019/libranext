@@ -1,0 +1,9 @@
+Package: ncurses-doc
+Version: 6.3
+Section: doc
+Priority: important
+Depends: libranext (>=4.0), ncurses (>=6.3)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Documentation for ncurses - shared libraries for terminal handling
+ The ncurses library routines are a terminal-independent method of updating character screens with reasonable optimization.
