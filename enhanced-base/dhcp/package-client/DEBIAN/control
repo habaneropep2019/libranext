@@ -1,0 +1,10 @@
+Package: dhclient
+Version: 4.4.2
+Section: net
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35), iproute2 (>=5.16.0)
+Provides: dhcp-client, isc-dhcp-common (=4.4.2), isc-dhcp-client (=4.4.2)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: DHCP client for automatically obtaining an IP address
+ This is the Internet Software Consortium's DHCP client.

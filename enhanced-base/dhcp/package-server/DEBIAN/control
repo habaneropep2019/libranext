@@ -1,0 +1,10 @@
+Package: dhcpd
+Version: 4.4.2
+Section: net
+Priority: optional
+Depends: libranext (>=4.0), glibc (>=2.35)
+Suggests: dhclient
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: ISC DHCP server for automatic IP address assignment
+ This is the Internet Software Consortium's DHCP server.
