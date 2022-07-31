@@ -1,0 +1,8 @@
+You may find it curious that the Tar documentation is listed as non-free on the Debian package site.
+
+Unfortunately, I have to concur with the DFSG and Debian leaderships concurral that the documentation license is listed as non-free.
+
+That is to say, I don't believe that the license is proprietary, however it does have some restrictions that I would consider
+abnormally restrictive for the usual permissiveness of open-source software. Therefore, you'll find the documentation built
+as a separate package and distributed in the 'uranus' section of the repositories. Non-free packages in Libranext are typically
+built with nonfree at the end of the package name, after the architecture.

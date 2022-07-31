@@ -4,3 +4,6 @@ earth - equivalent to debian's main
 sun - equivalent to debian's contrib
 uranus - equivalent to debian's non-free
 moon - for 3rd party publishing
+
+
+Non-free packages in Libranext are typically built with 'NONFREE' at the end of the package name, after the architecture.
