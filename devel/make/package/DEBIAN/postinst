@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/make.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/make.info-1'
+install-info --info-dir='/usr/share/info' '/usr/share/info/make.info-2'
