@@ -1,0 +1,9 @@
+Package: expat
+Version: 2.4.6
+Section: libs
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35), gcc (>=11.2)
+Provides: libexpat1 (=2.4.6), libexpat1-dev (=2.4.6)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: XML parsing C library
