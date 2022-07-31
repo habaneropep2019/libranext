@@ -1,0 +1,11 @@
+Package: cracklib
+Version: 2.9.7
+Section: libs
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Recommends: shadow
+Provides: libcrack2 (=2.9.7), cracklib-runtime (=2.9.7), libcrack2-dev (=2.9.7)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: pro-active password checker library, with dictionary
+ Shared library for cracklib2 which contains a C function which may be used in a passwd like program. The idea is simple: try to prevent users from choosing passwords that could be guessed by crack by filtering them out, at source. cracklib2 is NOT a replacement passwd program. cracklib2 is a LIBRARY.

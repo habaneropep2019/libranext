@@ -1,0 +1,9 @@
+Package: iproute2
+Version: 5.16.0
+Section: net
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: networking and traffic control tools
+ The iproute2 suite is a collection of utilities for networking and traffic control.

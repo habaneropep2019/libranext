@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+echo $(hostname) >>      /usr/share/dict/cracklib-extra-words
+
+create-cracklib-dict     /usr/share/dict/cracklib-words /usr/share/dict/cracklib-extra-words
