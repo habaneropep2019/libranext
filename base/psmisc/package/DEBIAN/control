@@ -1,0 +1,9 @@
+Package: psmisc
+Version: 23.4
+Section: admin
+Priority: required
+Depends: libranext (>=4.0), glibc (>=2.35), ncurses (>=6.3)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: utilities that use the proc file system
+ This package contains miscellaneous utilities that use the proc FS.
