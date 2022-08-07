@@ -1,0 +1,9 @@
+Package: pkg-config
+Version: 0.29.2
+Section: devel
+Priority: important
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: manage compile and link flags for libraries
+ pkg-config is a system for managing library compile and link flags that works with automake and autoconf.
