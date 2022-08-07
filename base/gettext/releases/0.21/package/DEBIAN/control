@@ -1,0 +1,10 @@
+Package: gettext
+Version: 0.21
+Section: utils
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: gettext-base (=0.21), gettext-doc (=0.21)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GNU Internationalization utilities for the base system
+ This package includes the gettext and ngettext programs which allow other packages to internationalize the messages given by shell scripts.

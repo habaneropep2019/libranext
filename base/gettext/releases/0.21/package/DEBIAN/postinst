@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/gettext.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/libtextstyle.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/autosprintf.info'
