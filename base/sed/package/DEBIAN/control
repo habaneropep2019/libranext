@@ -1,0 +1,10 @@
+Package: sed
+Version: 4.8
+Section: utils
+Priority: required
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35), acl (>=2.3.1)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GNU stream editor for filtering/transforming text
+ sed reads the specified files or the standard input if no files are specified, makes editing changes according to a list of commands, and writes the results to the standard output.
