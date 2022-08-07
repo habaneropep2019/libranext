@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Instructions extracted from the Linux from Scratch book:
-# Copyright © 1999-2022 Gerard Beekmans
-#
-# Instructions extracted from the Beyond Linux from Scratch Book:
-# Copyright © 1999-2022 The BLFS Development Team
-#
 # Debian packaging code Copyright © 2022 Alec Bloss
 #
 #Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -14,37 +8,43 @@
 #
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# Extract the source archive
-tar xvf curl-7.81.0.orig.tar.xz
+function build-7810 {
+	pushd releases/7.81.0/
+	bash build.sh
+	popd
+	cp releases/7.81.0/*.deb .
+}
 
-# Change directory to source
-cd curl-7.81.0
+function build-7840 {
+	pushd releases/7.84.0/
+	bash build.sh
+	popd
+	cp releases/7.84.0/*.deb .
+}
 
-# Configure and compile package
-./configure --prefix=/usr                           \
-            --disable-static                        \
-            --with-openssl                          \
-            --enable-threaded-resolver              \
-            --with-ca-path=/etc/ssl/certs &&
-make
+function latest {
+	build-7840
+}
 
-# Install to package directory
-unset workdir
-unset workdir1
-workdir1=`pwd`
-cd ..
-workdir=`pwd`
-cd $workdir1
-make DESTDIR=$workdir/package install
 
-rm -rf docs/examples/.deps &&
-
-find docs \( -name Makefile\* -o -name \*.1 -o -name \*.3 \) -exec rm {} \; &&
-
-install -v -d -m755 $workdir/package/usr/share/doc/curl-7.81.0 &&
-cp -v -R docs/*     $workdir/package/usr/share/doc/curl-7.81.0
-
-# Build the debian package and rename it correctly.
-cd ../
-dpkg-deb --build package
-mv package.deb curl_7.81.0_amd64.deb
+if [ -z "$1" ]
+then
+	echo "Defaulting to latest version..."
+	latest
+else
+	case "$1" in
+		7.81.0)
+			build-7810
+			;;
+		7.84.0)
+			build-7840
+			;;
+		*)
+			echo 'Fatal: Invalid option'
+			echo 'Available versions:'
+			echo '- 7.84.0 (default)'
+			echo '- 7.81.0'
+			exit 1
+			;;
+		esac
+fi
