@@ -1,0 +1,10 @@
+Package: grep
+Version: 3.7-1
+Section: utils
+Priority: required
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GNU grep, egrep and fgrep
+ 'grep' is a utility to search for text in files; it can be used from the command line or in scripts. Even if you don't want to use it, other packages on your system probably will.

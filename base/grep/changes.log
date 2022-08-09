@@ -1,0 +1,4 @@
+2022/08/08
+===========
+- Fixed DEBIAN/control - incorrect control file information (was a copy of bison)
+- Created 3.7-1 release so updates will go through apt, release is otherwise identical to 3.7 original.
