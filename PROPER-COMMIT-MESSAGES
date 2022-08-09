@@ -12,3 +12,4 @@ Acceptable tags:
 RELEASE - Used when committing a new release in a multiversion build package.
 FIX - Used when making a fix on a previously commited package, without a bugreport.
 BUGFIX - Used to track against a reported bug.
+UPDATE - Used to update non-package documentation
