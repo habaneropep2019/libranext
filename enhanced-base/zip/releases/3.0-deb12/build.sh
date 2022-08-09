@@ -16,7 +16,7 @@
 
 # Extract the source archive
 tar xvf zip30.orig.tar.gz
-tar xvf zip_3.0-12.debian.tar.gz
+tar xvf zip_3.0-12.debian.tar.xz &&
 
 # Change directory to source
 cd zip30
