@@ -1,0 +1,12 @@
+In order to facilitate sensible Git commit messages, Libranext will typically
+expect there to be a "tag" per se on the first line.
+
+For example:
+
+	RELEASE thispackage_1.0
+	
+	The detailed message goes here
+	
+Acceptable tags:
+
+RELEASE - Used when committing a new release in a multiversion build package.
