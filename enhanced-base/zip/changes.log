@@ -1,0 +1,6 @@
+2022/08/08
+===========
+- Changed to support multiversion build
+- Added Debian patches to a new release, upstream appears to not be maintained.
+- Should be tracking Debian from now on.
+- 3.0-deb12 release added

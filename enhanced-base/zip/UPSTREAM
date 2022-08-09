@@ -1,0 +1,3 @@
+It appears info-zip hasn't maintained zip for some time. Should be following Debian as upstream until we see otherwise.
+
+Debian patches can generally be applied to Libranext systems at build time.
