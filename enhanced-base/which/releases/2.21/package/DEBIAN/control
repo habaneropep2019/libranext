@@ -1,0 +1,10 @@
+Package: which
+Version: 2.21
+Section: utils
+Priority: required
+Essential: yes
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GNU which
+ A utility that is used to find which executable (or alias or shell function) is executed when entered on the shell prompt.
