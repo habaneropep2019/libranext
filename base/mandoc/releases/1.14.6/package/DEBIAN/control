@@ -1,0 +1,9 @@
+Package: mandoc
+Version: 1.14.6
+Section: doc
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35), zlib (>=1.2.11)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: BSD manpage compiler toolset
+ mandoc is a suite of tools compiling mdoc, the roff macro language of choice for BSD manual pages, and man, the predominant historical language for UNIX manuals.
