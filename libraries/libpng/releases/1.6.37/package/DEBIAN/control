@@ -1,0 +1,12 @@
+Package: libpng
+Version: 1.6.37
+Section: libs
+Priority: standard
+Essential: no
+Depends: libranext (>=4.0), glibc (>=2.35), zlib (>=1.2.11)
+Provides: libpng16 (=1.6.37), libpng16-16 (=1.6.37), libpng-dev (=1.6.37), libpng-tools (=1.6.37)
+Suggests: libpng++
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: PNG Library
+ libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files. This version as APNG (animated PNG) support.
