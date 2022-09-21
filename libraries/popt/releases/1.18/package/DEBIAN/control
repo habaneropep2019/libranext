@@ -1,0 +1,10 @@
+Package: popt
+Version: 1.18
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35)
+Provides: libpopt0 (=1.18), libpopt-dev (=1.18)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions, but it allows more powerful argument expansion.
