@@ -1,0 +1,8 @@
+Package: freetype2-doc
+Version: 2.11.1
+Section: docs
+Priority: optional
+Depends: libranext (>=4.0), freetype2 (>=2.11.1)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: FreeType 2 font engine, additional documentation

@@ -1,0 +1,11 @@
+Package: freetype2
+Version: 2.11.1
+Section: libs
+Priority: standard
+Depends: libranext (>=4.0), glibc (>=2.35), libpng (>=1.6.37), zlib (>=1.2.11)
+Provides: libfreetype6 (=2.11.1), libfreetype6-dev (=2.11.1), libfreetype-dev (=2.11.1)
+Recommends: freetype2-doc
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: FreeType 2 font engine, shared library files
+ The FreeType project is a team of volunteers who develop free, portable and high-quality software solutions for digital typography. They specifically target embedded systems and focus on providing small, efficient and ubiquitous products.
