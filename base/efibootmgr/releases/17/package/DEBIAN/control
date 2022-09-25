@@ -1,0 +1,11 @@
+Package: efibootmgr
+Version: 17
+Section: admin
+Priority: important
+Essential: no
+Depends: libranext (>=4.0), glibc (>=2.35), efivar (>=38), popt (>=1.18)
+Recommends: grub-efi
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Interact with the EFI Boot Manager
+ This is a Linux user-space application to modify the Intel Extensible Firmware Interface (EFI) Boot Manager configuration. This application can create and destroy boot entries, change the boot order, change the next running boot option, and more.
