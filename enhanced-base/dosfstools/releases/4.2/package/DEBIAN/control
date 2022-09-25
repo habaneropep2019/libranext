@@ -1,0 +1,10 @@
+Package: dosfstools
+Version: 4.2
+Section: otherosfs
+Priority: standard
+Essential: no
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: utilities for making and checking MS-DOS FAT filesystems
+ The dosfstools package includes the mkfs.fat, mkfs.vfat, and fsck.fat utilities, which respectively make and check MS-DOS FAT filesystems.
