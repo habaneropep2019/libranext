@@ -1,0 +1,12 @@
+Package: grub-uefi
+Version: 2.06
+Section: admin
+Priority: important
+Essential: no
+Depends: libranext (>=4.0), glibc (>=2.35), efivar (>=38), efibootmgr (>=17), freetype2 (>=2.11.1)
+Provides: grub-efi-amd64 (=2.06), grub2-common (=2.06), grub-efi-amd64-bin (=2.06)
+Conflicts: grub-legacy
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: GRand Unified Bootloader, version 2, UEFI version for AMD64
+ GRUB is a portable, powerful bootloader.

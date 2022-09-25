@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+install-info --info-dir='/usr/share/info' '/usr/share/info/grub.info'
+install-info --info-dir='/usr/share/info' '/usr/share/info/grub.info-1'
+install-info --info-dir='/usr/share/info' '/usr/share/info/grub.info-2'
+install-info --info-dir='/usr/share/info' '/usr/share/info/grub-dev.info'
