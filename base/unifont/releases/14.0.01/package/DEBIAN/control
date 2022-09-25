@@ -1,0 +1,10 @@
+Package: unifont
+Version: 14.0.01
+Section: fonts
+Priority: important
+Essential: no
+Depends: libranext (>=4.0), glibc (>=2.35)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: font with a glyph for each visible Unicode Plane 0 character
+ This package is a convenient way to install the PCF bitmap version of "Unifont" (intended for general-purpose use).
