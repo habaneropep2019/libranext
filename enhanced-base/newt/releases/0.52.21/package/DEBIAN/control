@@ -1,0 +1,11 @@
+Package: newt
+Version: 0.52.21
+Section: utils
+Priority: standard
+Essential: no
+Depends: libranext (>=4.0), glibc (>=2.35), slang (>=2.3.2), popt (>=1.18)
+Provides: libnewt0.52 (=0.52.21), libnewt-dev (=0.52.21), whiptail (=0.52.21)
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: Not Erik's Windowing Toolkit - text mode windowing with slang
+ Newt is a windowing toolkit for text mode built from the slang library. It allows color text mode applications to easily use stackable windows, push buttons, check boxes, radio buttons, lists, entry fields, labels, and displayable text. Scrollbars are supported, and forms may be nested to provide extra functionality.
