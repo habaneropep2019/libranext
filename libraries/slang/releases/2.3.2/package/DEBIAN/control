@@ -1,0 +1,12 @@
+Package: slang
+Version: 2.3.2
+Section: libs
+Priority: standard
+Essential: no
+Depends: libranext (>=4.0), glibc (>=2.35), libpng (>=1.6.37)
+Provides: libslang2 (=2.3.2), libslang2-modules (=2.3.2), libslang2-dev (=2.3.2)
+Recommends: newt
+Architecture: amd64
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: S-Lang programming library
+ S-Lang is a C programmer's library that includes routines for the rapid development of sophisticated, user friendly, multi-platform applications.
