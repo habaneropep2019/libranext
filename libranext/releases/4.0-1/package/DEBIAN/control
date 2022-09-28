@@ -1,0 +1,8 @@
+Package: libranext
+Version: 4.0-1
+Section: base
+Priority: required
+Essential: yes
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: This is a dummy package, intended to provide a simple bootstrap to install other packages on a bare Libranext system.

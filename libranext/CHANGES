@@ -1,0 +1,7 @@
+2022-09-27 - Alec Bloss <abloss@libranext.com>
+=================================================
+- Moved Libranext version information to /conf
+- Added /conf
+- Added detailed Libranext version information file in /conf
+- Updated DEBIAN/control
+- Converted package to use the newer releases/ and build.sh

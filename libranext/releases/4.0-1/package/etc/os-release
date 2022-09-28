@@ -1,0 +1,10 @@
+PRETTY_NAME="Libranext L4 (greenfinch)"
+NAME="Libranext"
+VERSION_ID="4"
+VERSION="4 (greenfinch)"
+VERSION_CODENAME="greenfinch"
+ID=libranext
+ID_LIKE=debian
+HOME_URL="https://libranext.com/"
+SUPPORT_URL="https://centre.libranext.com/"
+BUG_REPORT_URL="https://centre.libranext.com/"
