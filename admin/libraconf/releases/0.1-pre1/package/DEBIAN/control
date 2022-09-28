@@ -1,0 +1,10 @@
+Package: libraconf
+Version: 0.1-pre1
+Section: admin
+Priority: required
+Essential: no
+Depends: libranext (>=4.0), newt (>=0.52.21)
+Provides: libconf (=0.1-pre1)
+Architecture: all
+Maintainer: Alec Bloss <abloss@libranext.com>
+Description: The Libranext Configuration Tool
