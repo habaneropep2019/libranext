@@ -35,4 +35,4 @@ DESTDIR=$workdir/package ./install.sh
 # Build the debian package and rename it correctly.
 cd ../
 dpkg-deb --build package
-mv package.deb libraconf_0.1-pre1_amd64.deb
+mv package.deb libraconf_0.1-pre1_all.deb
